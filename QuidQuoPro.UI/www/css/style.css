@@ -1,0 +1,27 @@
+/* Empty. Add your own CSS if you like */
+
+.autowidth-textarea {
+    width: 100%;
+    resize: none;
+}
+
+.input-label-margin {
+    margin: 10px 0 0;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.select-full-width {
+    max-width: none !important;
+    padding-left: 0px;
+}
+
+.popup-field {
+    border: 1px solid #ddd !important;
+}
+
+.normal-wrapping {
+    white-space: normal !important;
+}

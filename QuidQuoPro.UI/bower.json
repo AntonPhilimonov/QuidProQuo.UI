@@ -1,0 +1,6 @@
+{
+  "name": "QuidProQuo.UI",
+  "dependencies": {
+     "ng-cordova-oauth": "0.2.3"
+  }
+}

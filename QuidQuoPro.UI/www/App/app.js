@@ -39,6 +39,33 @@
                     }
                 }
             })
+            .state('tab.ads', {
+                url: '/ads',
+                views: {
+                    'tab-ads': {
+                        templateUrl: 'App/Views/ads/adsView.html',
+                        controller: 'AdsController'
+                    }
+                }
+            })
+            .state('tab.order', {
+                url: '/order',
+                views: {
+                    'tab-order': {
+                        templateUrl: 'App/Views/order/orderView.html',
+                        controller: 'OrderController'
+                    }
+                }
+            })
+            .state('tab.messages', {
+                url: '/messages',
+                views: {
+                    'tab-messages': {
+                        templateUrl: 'App/Views/messages/messagesView.html',
+                        controller: 'MessagesController'
+                    }
+                }
+            })
             .state('login', {
                 url: '/login',
                 abstract: false,

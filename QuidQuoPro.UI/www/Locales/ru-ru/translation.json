@@ -1,8 +1,9 @@
 ﻿{
   "tabs": {
     "tab-account-title": "Личный кабинет",
-    "tab-summary-title": "Итоги",
-    "tab-package-title": "Посылки"
+    "tab-order-title": "Заказать",
+    "tab-ads-title": "Объявления",
+    "tab-messages-title": "Сообщения"
   },
   "loginview": {
     "title": "Вход",

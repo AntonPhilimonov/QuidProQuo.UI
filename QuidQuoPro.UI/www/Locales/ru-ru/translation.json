@@ -44,5 +44,10 @@
     "streetTitle": "Улица",
     "houseTitle": "Дом",
     "flatShortTitle": "Кв."
+  },
+  "orderview": {
+    "question": "Что вы хотите предложить?",
+    "thing": "Вещь",
+    "service": "Услуга"
   }
 }

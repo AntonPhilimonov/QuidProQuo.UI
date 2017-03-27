@@ -57,6 +57,24 @@
                     }
                 }
             })
+            .state('tab.thing', {
+                url: '/thing',
+                views: {
+                    'tab-order': {
+                        templateUrl: 'App/Views/order/thing/thingView.html',
+                        controller: 'ThingController'
+                    }
+                }
+            })
+            .state('tab.service', {
+                url: '/service',
+                views: {
+                    'tab-order': {
+                        templateUrl: 'App/Views/order/service/ServiceView.html',
+                        controller: 'ServiceController'
+                    }
+                }
+            })
             .state('tab.messages', {
                 url: '/messages',
                 views: {
@@ -72,7 +90,7 @@
                 templateUrl: 'App/Views/login/loginView.html',
                 controller: 'LoginController'
             })
-          .state('signup', {
+            .state('signup', {
               url: '/signup',
               abstract: false,
               templateUrl: 'App/Views/login/signupView.html',

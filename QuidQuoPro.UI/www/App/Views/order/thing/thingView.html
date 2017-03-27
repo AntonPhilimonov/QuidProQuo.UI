@@ -1,9 +1,12 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <div>Content goes here.</div>
-</body>
-</html>
+﻿<ion-view view-title="{{::'tabs.tab-order-title' | i18next}}">
+    <ion-content>
+        <div>
+            <p>{{thing}}</p>
+        </div>
+        <ion-list>
+            <ion-item ng-repeat="item in items">
+                Caterory {{item.id}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

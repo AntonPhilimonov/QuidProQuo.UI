@@ -1,13 +1,56 @@
 ﻿<ion-view view-title="{{::'tabs.tab-account-title' | i18next}}">
     <ion-content>
         <div class="list card">
-
-            <div class="item item-avatar">
+            <div class="item item-avatar item-right">
                 <img src="avatar.jpg">
-                <h2>Pretty Hate Machine</h2>
-                <p>Nine Inch Nails</p>
+                <center>
+                    <h3>Имя Фамилия</h3>
+                    <p>Статус</p>
+
+                    <i class="icon ion-star"></i>
+                    <i class="icon ion-star"></i>
+                    <i class="icon ion-star"></i>
+                    <i class="icon ion-star"></i>
+                    <i class="icon ion-star"></i>
+                    <button class="button button-calm button-small button-block">0 бонусов</button>
+                </center>
             </div>
 
+
+            <div class="item item-body">
+                <center><h2>Контактные данные</h2></center>
+            </div>
+            <div class="item item-body">
+                <table>
+                    <tr>
+                        <td>
+                            <p>Мобильный телефон</p>
+                            <h2>8 922 888 88 88</h2>
+                            <p>Электронная почта</p>
+                            <h2>@mail.ru</h2>
+                        </td>
+                        <td>
+                            <p>Мое местоположение</p>
+                            <div>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table>
+                <tr class="list card">
+                    <td>
+                        <p><a class="button icon icon-right ion-chevron-right" href="#/tab/Lists">0<br>Активные</a></p>
+                    </td>
+                    <td>
+                        <p><a class="button icon icon-right ion-chevron-right" href="#/tab/Lists">0<br>Завершенные</a></p>
+                    </td>
+                    <td>
+                        <p><a class="button icon icon-right ion-chevron-right" href="#/tab/Lists">0<br>Отзывы</a></p>
+                    </td>
+                </tr>
+            </table>
         </div>
     </ion-content>
 </ion-view>

@@ -1,4 +1,4 @@
-﻿angular.module('app.controllers')
+﻿angular.module('app.services')
     .service('ThingOrService', function() {
         var _title = 'pls, work';
         return {

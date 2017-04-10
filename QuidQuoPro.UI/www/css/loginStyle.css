@@ -15,9 +15,8 @@
 }
 
 .signup-svg {
-    background: url(images/signup.svg);
+    background-image: url('images/sugnup.svg');
 }
-
 .input-text {
     font: 13pt Open Sans Italic;
     background-color: #d3d3d3;

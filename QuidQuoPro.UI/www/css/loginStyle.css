@@ -1,0 +1,40 @@
+﻿.captcha {
+    width: 140px;
+    height: 50px;
+}
+
+.title {
+    font: 20pt Open Sans Bold;
+    text-align: center;
+}
+
+.context {
+    width: 30%;
+    height: 30%;
+    margin: auto;
+}
+
+.signup-svg {
+    background: url(images/signup.svg);
+}
+
+.input-text {
+    font: 13pt Open Sans Italic;
+    background-color: #d3d3d3;
+    color: #000000;
+    text-align: center;
+    margin: 3% 10% 3% 10%;
+    border-radius: 8px;
+    width: 80%;
+}
+
+#signup-button {
+    font: 15pt Open Sans regular;
+    background-color: #1E90FF;
+    color: #ffffff;
+    text-align: center;
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+    margin: 3% 10% 3% 10%;
+}

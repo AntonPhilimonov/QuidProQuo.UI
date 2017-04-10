@@ -84,6 +84,15 @@
                     }
                 }
             })
+            .state('tab.favorites', {
+                url: '/favorites',
+                views: {
+                    'tab-favorites': {
+                        templateUrl: 'App/Views/favorites/favoritesView.html',
+                        controller: 'FavoritesController'
+                    }
+                }
+            })
             .state('login', {
                 url: '/login',
                 abstract: false,

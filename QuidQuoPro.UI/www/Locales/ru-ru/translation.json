@@ -1,9 +1,10 @@
 ﻿{
   "tabs": {
     "tab-account-title": "Личный кабинет",
-    "tab-order-title": "Заказать",
     "tab-ads-title": "Объявления",
-    "tab-messages-title": "Сообщения"
+    "tab-favorites-title": "Избранное",
+    "tab-messages-title": "Сообщения",
+    "tab-order-title": "Заказать"
   },
   "loginview": {
     "title": "Вход",
@@ -15,7 +16,8 @@
     "signup": "Регистрация",
     "email": "Электронная почта",
     "confirmPassword": "Подтвердите пароль",
-    "captcha": "Код"
+    "captcha": "Код",
+    "continue": "ПРОДОЛЖИТЬ"
   },
   "packages": {
     "new": {

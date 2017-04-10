@@ -1,11 +1,11 @@
 <ion-tabs class="tabs-positive tabs-icon-top">
-    <!--Личный-кабинет Tab -->
-    <ion-tab title="{{::'tabs.tab-account-title' | i18next}}" icon-off="ion-ios-person-outline" icon-on="ion-ios-person" href="#/tab/account">
-        <ion-nav-view name="tab-account"></ion-nav-view>
-    </ion-tab>
     <!--Объявления Tab -->
     <ion-tab title="{{::'tabs.tab-ads-title' | i18next}}" icon-off="ion-ios-search" icon-on="ion-ios-search-strong" href="#/tab/ads">
         <ion-nav-view name="tab-ads"></ion-nav-view>
+    </ion-tab>
+    <!--Избранное Tab -->
+    <ion-tab title="{{::'tabs.tab-favorites-title' | i18next}}" icon-off="ion-ios-star-outline" icon-on="ion-ios-star" href="#/tab/favorites">
+        <ion-nav-view name="tab-favorites"></ion-nav-view>
     </ion-tab>
     <!--Заказать Tab -->
     <ion-tab title="{{::'tabs.tab-order-title' | i18next}}" icon-off="ion-ios-plus-outline" icon-on="ion-ios-plus" href="#/tab/order">
@@ -14,5 +14,9 @@
     <!--Сообщения Tab -->
     <ion-tab title="{{::'tabs.tab-messages-title' | i18next}}" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/messages">
         <ion-nav-view name="tab-messages"></ion-nav-view>
+    </ion-tab>
+    <!--Личный-кабинет Tab -->
+    <ion-tab title="{{::'tabs.tab-account-title' | i18next}}" icon-off="ion-ios-person-outline" icon-on="ion-ios-person" href="#/tab/account">
+        <ion-nav-view name="tab-account"></ion-nav-view>
     </ion-tab>
 </ion-tabs>

@@ -1,29 +1,32 @@
-﻿<ion-view view-title="{{'loginview.signup' | i18next}}">
+﻿<ion-view>
+    <ion-nav-bar class="bar bar-header">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
     <ion-content>
-        <div class="list">
-            <label class="item item-input">
-                <input placeholder="{{'loginview.userName' | i18next}}" type="text" ng-model="username">
+        <div class="center">
+            <label class="title">
+                <p>{{'loginview.signup' | i18next}}</p>
             </label>
-            <label class="item item-input">
-                <input placeholder="{{'loginview.email' | i18next}}" type="email" ng-model="email">
-            </label>
-            <label class="item item-input">
-                <input placeholder="{{'loginview.password' | i18next}}" type="password" ng-model="password">
-            </label>
-            <label class="item item-input">
-                <input placeholder="{{'loginview.confirmPassword' | i18next}}" type="password" ng-model="confirmPassword">
-            </label>
+
+            <p class="context">
+                <svg class="signup-svg" viewBox="0 0 130 127"></svg>
+            </p>
+
+            <input class="input-text" placeholder="{{'loginview.userName' | i18next}}" type="text" ng-model="username">
+            <input class="input-text" placeholder="{{'loginview.email' | i18next}}" type="email" ng-model="email">
+            <input class="input-text" placeholder="{{'loginview.password' | i18next}}" type="password" ng-model="password">
+            <input class="input-text" placeholder="{{'loginview.confirmPassword' | i18next}}" type="password" ng-model="confirmPassword">
+
             <div class="item item-input">
                 <input placeholder="{{'loginview.captcha' | i18next}}" type="password" ng-model="captchaValue">
                 <img class="captcha" ng-src="{{captchaPath}}">
                 <a class="button button-icon icon ion-android-refresh" ng-click="reloadCaptcha()"></a>
             </div>
-            <div class="padding">
-                <button class="button button-block button-positive" ng-click="login(username, password)">
-                    {{'loginview.signup' | i18next}}
-                </button>
-            </div>
 
+            <button id="signup-button" ng-click="login(username, password)">
+                {{'loginview.continue' | i18next}}
+            </button>
         </div>
     </ion-content>
 </ion-view>

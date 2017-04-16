@@ -1,28 +1,60 @@
 ﻿<ion-view view-title="{{'loginview.title' | i18next}}">
     <ion-content>
-        <div class="list">
-            <label class="item item-input">
-                <input placeholder="{{'loginview.userName' | i18next}}" type="text" ng-model="username">
-            </label>
-            <label class="item item-input">
-                <input placeholder="{{'loginview.password' | i18next}}" type="password" ng-model="password">
-            </label>
-            <div class="padding">
-                <button class="button button-block button-positive" ng-click="login(username, password)">
-                    {{'loginview.logIn' | i18next}}
-                </button>
-                <button class="button button-block button-positive" ng-click="vklogin()">
-                    {{'loginview.VkLogin' | i18next}}
-                </button>
-                <div class="row">
-                    <p class="text-center col">
+        <div class="list_login">
+            <div class="context">
+                <svg class="hands" viewBox="0 0 180 143">
+                </svg>
+            </div>
+            <div>
+                <div class="data">
+                    <label>
+                        <div class="icon">
+                            <svg class="ic_1" viewBox="0 0 140 107">
+                            </svg>
+                        </div>
+                        <input class="field" placeholder="{{'loginview.userName' | i18next}}" type="text" ng-model="username">
+                    </label>
+                </div>
+                <div class="data">
+                    <label>
+                        <div class="icon">
+                            <svg class="ic_2" viewBox="0 0 85 99">
+                            </svg>
+                        </div>
+                        <input class="field" placeholder="{{'loginview.password' | i18next}}" type="password" ng-model="password">
+                    </label>
+                </div>
+                <div class="padding">
+                    <button class="button_bt" ng-click="login(username, password)">
+                        {{'loginview.logIn' | i18next}}
+                    </button>
+                    <p class="text-center">
                         <a href="#/signup">{{'loginview.signup' | i18next}}</a>
                     </p>
-                    <p class="text-center col">
+                    <p class="text-center">
                         <a href="#/forgot-password">{{'loginview.forgotPassword' | i18next}}</a>
                     </p>
+                    <div class="conteiner">
+
+                        <label ng-click="vklogin()">
+                            <div class="social_network">
+
+                                <svg class="Vk" viewBox="0 0 85 80"></svg>
+                            </div>
+                        </label>
+                        <label ng-click="vklogin()">
+                            <div class="social_network">
+
+                                <svg class="Google" viewBox="0 0 85 80"></svg>
+                            </div>
+                        </label>
+                        <label ng-click="vklogin()">
+                            <div class="social_network">
+                                <svg class="Facedook" viewBox="0 0 85 80"></svg>
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
     </ion-content>
 </ion-view>

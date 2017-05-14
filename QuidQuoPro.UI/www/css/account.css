@@ -1,0 +1,15 @@
+﻿.userpic{
+     width:25px;
+    height:15px;
+    position:relative;
+  margin: 3% 0% 0% 82%;
+    }
+
+.avatar{
+    background-image: url('images/avatar.svg');
+    margin: 25% 0% 0% 0%;
+    position: absolute;
+}
+.list_card{
+    background: #00a8d0;
+}

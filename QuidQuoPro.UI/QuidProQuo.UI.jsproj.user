@@ -3,4 +3,7 @@
   <PropertyGroup>
     <ReferenceCachePath>C:\Users\123\AppData\Local\Temp\2ijwwess_QuidProQuo.UI_refcache</ReferenceCachePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <DebuggerFlavor>RippleNexus</DebuggerFlavor>
+  </PropertyGroup>
 </Project>

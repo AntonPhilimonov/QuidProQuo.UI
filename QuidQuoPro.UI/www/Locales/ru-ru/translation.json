@@ -19,37 +19,20 @@
     "captcha": "Код",
     "continue": "ПРОДОЛЖИТЬ"
   },
-  "packages": {
-    "new": {
-      "title": "Новая посылка",
-      "nameLabel": "Название",
-      "descriptionLabel": "Описание",
-      "descriptionPlaceholder": "Расскажите подробнее об отправляемой посылке",
-      "typeLabel": "Тип посылки",
-      "fromTitle": "Откуда:",
-      "toTitle": "Куда:"
-    },
-    "packageType": {
-      "letter": "Письмо",
-      "parcel": "Бандероль",
-      "food": "Продукты",
-      "documents": "Документы",
-      "electronics": "Электроника"
-    }
-  },
-  "addressPicker": {
-    "cancelButtonCaption": "Отмена",
-    "chooseButtonCaption": "Выбрать",
-    "addressPickerTitleWidget": "Укажите адрес",
-    "countryTitle": "Страна",
-    "cityTitle": "Город",
-    "streetTitle": "Улица",
-    "houseTitle": "Дом",
-    "flatShortTitle": "Кв."
-  },
   "orderview": {
     "question": "Что вы хотите предложить?",
     "thing": "Вещь",
     "service": "Услуга"
+  },
+  "settings": {
+    "title": "Настройки",
+    "phone": "Добавте номер телефона",
+    "location": "Добавте местоположение",
+    "notice": "Настройки уведомлений",
+    "private": "Настройки приватности",
+    "bonus": "Получить бонусы",
+    "support": "Служба поддержки",
+    "terms_of_us": "Пользовательское соглашение",
+    "exit": "Выход из приложения"
   }
 }

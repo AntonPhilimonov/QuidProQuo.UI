@@ -1,4 +1,7 @@
-﻿angular.module('app',
+﻿/// <reference path="Views/login/loginView.html" />
+/// <reference path="Views/settings/settingsView.html" />
+/// <reference path="Views/settings/settingsView.html" />
+angular.module('app',
     [
         'ngSanitize',
         'jm.i18next',
@@ -90,6 +93,15 @@
                     'tab-favorites': {
                         templateUrl: 'App/Views/favorites/favoritesView.html',
                         controller: 'FavoritesController'
+                    }
+                }
+            })
+            .state('tab.settings', {
+                url: '/settings',
+                views: {
+                    'tab-settings': {
+                        templateUrl: 'App/Views/settings/settingsView.html',
+                        controller: 'SettingsController'
                     }
                 }
             })

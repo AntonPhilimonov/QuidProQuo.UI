@@ -1,4 +1,8 @@
 <ion-tabs class="tabs-positive tabs-icon-top">
+    <!--Настройки Tab -->
+    <ion-tab title="{{::'settings.title' | i18next}}" icon-off="ion-gear-a" icon-on="ion-gear-b" href="#/tab/settings">
+        <ion-nav-view name="tab-settings"></ion-nav-view>
+    </ion-tab>
     <!--Объявления Tab -->
     <ion-tab title="{{::'tabs.tab-ads-title' | i18next}}" icon-off="ion-ios-search" icon-on="ion-ios-search-strong" href="#/tab/ads">
         <ion-nav-view name="tab-ads"></ion-nav-view>

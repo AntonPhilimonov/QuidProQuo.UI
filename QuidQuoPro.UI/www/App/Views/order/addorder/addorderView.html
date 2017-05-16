@@ -1,0 +1,45 @@
+﻿<ion-view>
+    <ion-nav-bar class="bar bar-header">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div>
+            <p>
+                FOTO
+            </p>
+        </div>
+
+        <label class="item item-input">
+            <input placeholder="{{'orderview.title' | i18next}}" type="text">
+        </label>
+
+        <label class="item item-input">
+            <input placeholder="{{'orderview.description' | i18next}}" type="text">
+        </label>
+
+        <label class="item item-input">
+           {{'orderview.category' | i18next}} {{category}}
+        </label>
+
+        <button class="button button-block icon-right icon ion-location">
+           {{'orderview.location' | i18next}}
+        </button>
+
+        <label> {{'orderview.share' | i18next}} </label>
+        <div class="item item-checkbox">
+            {{'orderview.vk' | i18next}} 
+            <label class="checkbox">
+                <input type="checkbox" />
+            </label>
+        </div>
+        <div class="item item-checkbox">
+            {{'orderview.fb' | i18next}}
+            <label class="checkbox">
+                 <input type="checkbox" />
+            </label>
+        </div>
+
+        <button class="button button-block">{{'orderview.add' | i18next}}</button>
+    </ion-content>
+</ion-view>

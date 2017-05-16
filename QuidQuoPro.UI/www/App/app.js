@@ -70,8 +70,17 @@
                 url: '/service',
                 views: {
                     'tab-order': {
-                        templateUrl: 'App/Views/order/service/ServiceView.html',
+                        templateUrl: 'App/Views/order/service/serviceView.html',
                         controller: 'ServiceController'
+                    }
+                }
+            })
+            .state('tab.addorder', {
+                url: '/addorder',
+                views: {
+                    'tab-order': {
+                        templateUrl: 'App/Views/order/addorder/addorderView.html',
+                        controller: 'AddOrderController'
                     }
                 }
             })

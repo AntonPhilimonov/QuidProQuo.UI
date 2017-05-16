@@ -1,11 +1,15 @@
-﻿<ion-view view-title="{{::'tabs.tab-order-title' | i18next}}">
+﻿<ion-view>
+    <ion-nav-bar class="bar bar-header">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
     <ion-content>
         <div>
             <p>{{thing}}</p>
         </div>
         <ion-list>
-            <ion-item ng-repeat="item in items">
-                Caterory {{item.id}}
+            <ion-item ng-repeat="item in items" >
+                <a class="button button-block icon icon-right ion-chevron-right" ng-click="addOrder(item.id)" href="#/tab/addorder">{{item.id}}</a>
             </ion-item>
         </ion-list>
     </ion-content>

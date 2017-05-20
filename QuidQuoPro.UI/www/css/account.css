@@ -1,15 +1,78 @@
 ﻿.userpic{
-     width:25px;
-    height:15px;
+     width:100px;
+    height:100px;
     position:relative;
-  margin: 3% 0% 0% 82%;
+  margin: 0% 0% 0% 0%;
     }
 
 .avatar{
-    background-image: url('images/avatar.svg');
-    margin: 25% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
     position: absolute;
 }
-.list_card{
-    background: #00a8d0;
+.UserName{
+  margin: 10% 10% 0% 10%;
 }
+.UserData{
+ margin: 10% 10% 0% 20%;
+}
+.h3{
+     font-family:'Open Sans';
+    font-size: 22px;
+     font-weight:bold;
+    color:#ffffff;
+    text-align:center;
+     margin: 10% 10% 0% 10%;
+}
+
+.h2{
+     font-family:'Open Sans';
+    font-size: 18px;
+     font-weight:bold;
+    color:#ffffff;
+    text-align:center;
+}
+.a{
+    color:#000000;
+}
+.LC{
+    text-decoration:none; 
+    text-align:center; 
+ padding:16px 4px; 
+ border:none; 
+  
+ font:16px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#000000; 
+ background:#ffffff; 
+ -webkit-box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #ffffff,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;  
+  
+  }.LC:hover{
+ padding:18px 7px; 
+ border:none; 
+  
+ font:16px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#000000; 
+ background:#ffffff; 
+ -webkit-box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #ffffff,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;  
+  
+ }.LC:active{
+ padding:18px 7px; 
+ border:solid 1px #ffffff; 
+  
+ font:16px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#000000; 
+ background:#ffffff; 
+ -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+ -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+ box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+  
+ }

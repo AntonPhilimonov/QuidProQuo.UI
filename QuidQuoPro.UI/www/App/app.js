@@ -72,15 +72,26 @@
                 templateUrl: 'App/Views/login/loginView.html',
                 controller: 'LoginController'
             })
-            .state('tab.Lists', {
-                url: '/Lists',
+            .state('tab.List_activ', {
+                url: '/list_activ',
                 views: {
                     'tab-account': {
-                        templateUrl: 'App/Views/account/Lists.html',
+                        templateUrl: 'App/Views/account/List_activ.html',
                         controller: 'ListsController'
                     }
                 }
             })
+
+             .state('tab.List_and', {
+                 url: '/list_and',
+                 views: {
+                     'tab-account': {
+                         templateUrl: 'App/Views/account/List_and.html',
+                         controller: 'ListsControllerAnd'
+                     }
+                 }
+             })
+
           .state('signup', {
               url: '/signup',
               abstract: false,

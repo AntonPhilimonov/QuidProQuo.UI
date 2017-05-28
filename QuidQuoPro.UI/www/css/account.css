@@ -40,39 +40,48 @@
 .LC{
     text-decoration:none; 
     text-align:center; 
- padding:16px 4px; 
- border:none; 
+    padding:16px 4px; 
+    border:none; 
   
- font:16px Arial, Helvetica, sans-serif; 
- font-weight:bold; 
- color:#000000; 
- background:#ffffff; 
- -webkit-box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff; 
- -moz-box-shadow: 0px 0px 2px #ffffff,  inset 0px 0px 1px #ffffff;  
- box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;  
+    font:16px Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    color:#000000; 
+    background:#ffffff; 
+    -webkit-box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #ffffff,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;    
+  }
+
+.LC:hover{
+     padding:18px 7px; 
+    border:none; 
   
-  }.LC:hover{
- padding:18px 7px; 
- border:none; 
+    font:16px Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    color:#000000; 
+    background:#ffffff; 
+    -webkit-box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #ffffff,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;   
+ }
+
+.LC:active{
+    padding:18px 7px; 
+    border:solid 1px #ffffff; 
   
- font:16px Arial, Helvetica, sans-serif; 
- font-weight:bold; 
- color:#000000; 
- background:#ffffff; 
- -webkit-box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff; 
- -moz-box-shadow: 0px 0px 2px #ffffff,  inset 0px 0px 1px #ffffff;  
- box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;  
-  
- }.LC:active{
- padding:18px 7px; 
- border:solid 1px #ffffff; 
-  
- font:16px Arial, Helvetica, sans-serif; 
- font-weight:bold; 
- color:#000000; 
- background:#ffffff; 
- -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
- -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
- box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+    font:16px Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    color:#000000; 
+    background:#ffffff; 
+    -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+    -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+    box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
   
  }
+
+
+#col li {
+        float: left;
+        width: 50%;  
+      }
+     

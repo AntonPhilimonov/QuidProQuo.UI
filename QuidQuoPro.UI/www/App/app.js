@@ -81,7 +81,6 @@
                     }
                 }
             })
-
              .state('tab.List_and', {
                  url: '/list_and',
                  views: {
@@ -91,6 +90,15 @@
                      }
                  }
              })
+            .state('tab.Reviews', {
+                url: '/reviews',
+                views: {
+                    'tab-account': {
+                        templateUrl: 'App/Views/account/Reviews.html',
+                        controller: 'ReviewsController'
+                    }
+                }
+            })
 
           .state('signup', {
               url: '/signup',

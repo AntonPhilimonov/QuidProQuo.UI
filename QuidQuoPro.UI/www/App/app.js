@@ -75,6 +75,15 @@
                     }
                 }
             })
+            .state('tab.subcateg', {
+                url: '/subcateg',
+                views: {
+                    'tab-order': {
+                        templateUrl: 'App/Views/order/subcategory/subcategoryView.html',
+                        controller: 'SubcategoryController'
+                    }
+                }
+            })
             .state('tab.addorder', {
                 url: '/addorder',
                 views: {

@@ -10,7 +10,7 @@
   <!-- Support for Cordova 5.0.0 plugin system -->
   <allow-intent href="*" />
   <allow-navigation href="*" />
-  <access origin="http://127.0.0.1*"/>
+  <access origin="http://127.0.0.1*" />
   <access origin="http://*" />
   <access origin="https://*" />
   <platform name="android">
@@ -82,6 +82,7 @@
     <splash src="res/screens/android/screen-ldpi-portrait.png" density="port-ldpi" />
     <splash src="res/screens/android/screen-mdpi-portrait.png" density="port-mdpi" />
     <splash src="res/screens/android/screen-xhdpi-portrait.png" density="port-xhdpi" />
+    <preference name="Orientation" value="sensorLandscape" />
   </platform>
   <platform name="ios">
     <splash src="res/screens/ios/screen-iphone-portrait.png" width="320" height="480" />

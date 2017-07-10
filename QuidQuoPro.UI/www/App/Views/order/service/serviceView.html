@@ -8,9 +8,9 @@
             <p>{{service}}</p>
         </div>
         <ion-list id="list">
-            <ion-item ng-repeat="item in items">
-                <a class="button button-block icon icon-right ion-chevron-right" ng-click="addOrder(item)" href="#/tab/subcateg">{{item.Title}}</a>
-            </ion-item>
+            <ion-div ng-repeat="item in items">
+                <a class="button button-category" ng-click="addOrder(item)" href="#/tab/subcateg">{{item.Title}}</a>
+            </ion-div>
         </ion-list>
     </ion-content>
 </ion-view>

@@ -1,0 +1,30 @@
+﻿.button_order{
+    text-decoration:none;
+ width:100%;
+ border:none; 
+ text-align:left;
+ font:16px Arial, Helvetica, sans-serif; 
+ font-weight:bold; 
+ color:#000000; 
+ background:#ffffff; 
+ padding:20px 0px 20px 4px;
+ }
+    .button_order:active {
+        width: 100%;
+        border: none;
+        padding:20px 0px 20px 4px;
+        text-align: left;
+        font: 16px Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #000000;
+        background-color: #ffffff;
+        background-image: -moz-linear-gradient(top, #f7f4f4 0%, #ffffff 100%);
+        background-image: -webkit-linear-gradient(top, #f7f4f4 0%, #ffffff 100%);
+        background-image: -o-linear-gradient(top, #f7f4f4 0%, #ffffff 100%);
+        background-image: -ms-linear-gradient(top, #f7f4f4 0%,#ffffff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+        background-image: linear-gradient(top, #f7f4f4 0%,#ffffff 100%);
+    }
+.buttons{
+ margin:100px 0px 0px 0px;
+        }

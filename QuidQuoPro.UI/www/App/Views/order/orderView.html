@@ -2,8 +2,24 @@
     <ion-content overflow-scroll="false">
         <div>
             <p>{{'orderview.question' | i18next}}</p>
-            <p><a class="button icon icon-right ion-chevron-right" ng-click="setThing()" href="#/tab/thing">{{'orderview.thing' | i18next}}</a></p>
-            <p><a class="button icon icon-right ion-chevron-right" ng-click="setService()" href="#/tab/service">{{'orderview.service' | i18next}}</a></p>
+            <ul class="buttons">
+               <li>
+                    <div class="row">
+                        <div class="col">
+                            <a class="button button_order" ng-click="setThing()" href="#/tab/thing">
+                                <img src=""/>
+                            {{'orderview.thing' | i18next}}</a>
+                        </div>
+                    </div>              
+                    <div class="row">
+                        <div class="col">
+                            <a class="button button_order" ng-click="setService()" href="#/tab/service">
+                                <img src=""/>
+                            {{'orderview.service' | i18next}}</a>
+                        </div>
+                    </div>
+               </li>
+            </ul>
         </div>
     </ion-content>
 </ion-view>

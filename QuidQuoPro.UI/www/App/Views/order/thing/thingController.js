@@ -7,19 +7,19 @@
 
         $scope.thing = ThingOrService.getTitle();
 
-        $scope.items = [
-            { id: 'Запчасти' },
-            { id: 'Посуда' },
-            { id: 2 },
-            { id: 3 },
-            { id: 4 },
-            { id: 5 },
-            { id: 6 },
-            { id: 7 },
-            { id: 8 },
-            { id: 9 },
-            { id: 10 }
-        ];
+        $scope.items = [];
+
+        if ($scope.thing === 'Вещи:') {
+            $.get('http://localhost/api/categories/', function(data) {
+
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].IsCategory === true && data[i].CategoryType === 1) {
+                        $scope.items.push(data[i]);
+                    } 
+                }
+            },
+           'json');
+        }
 
         $scope.addOrder = function (item) {
             ThingOrService.setTitle(item);

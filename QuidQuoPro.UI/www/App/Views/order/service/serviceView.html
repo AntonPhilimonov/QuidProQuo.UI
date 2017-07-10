@@ -7,10 +7,10 @@
         <div>
             <p>{{service}}</p>
         </div>
-        <ion-list>
-            <ion-item ng-repeat="item in items">
-                <a class="button button-block icon icon-right ion-chevron-right" ng-click="addOrder(item.id)" href="#/tab/addorder">{{item.id}}</a>
-            </ion-item>
+        <ion-list id="list">
+            <ion-div ng-repeat="item in items">
+                <a class="button button-category" ng-click="addOrder(item)" href="#/tab/subcateg">{{item.Title}}</a>
+            </ion-div>
         </ion-list>
     </ion-content>
 </ion-view>

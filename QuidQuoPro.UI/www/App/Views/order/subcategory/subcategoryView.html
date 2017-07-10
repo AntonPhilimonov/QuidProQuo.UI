@@ -5,11 +5,11 @@
     </ion-nav-bar>
     <ion-content overflow-scroll="false">
         <div>
-            <p>{{thing}}</p>
+            <p>{{category}}</p>
         </div>
-        <ion-list>
-            <ion-div ng-repeat="item in items" >
-                <a class="button button-category" ng-click="addOrder(item)" href="#/tab/subcateg">{{item.Title}}</a>
+        <ion-list id="list">
+            <ion-div ng-repeat="item in items">
+                <a class="button button-category" ng-click="addOrder(item)" href="#/tab/addorder">{{item.Title}}</a>
             </ion-div>
         </ion-list>
     </ion-content>

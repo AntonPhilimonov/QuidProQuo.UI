@@ -5,5 +5,5 @@
         }
         onCreate();
 
-        $scope.category = ThingOrService.getTitle();
+        $scope.category = ThingOrService.getTitle().Title;
     });

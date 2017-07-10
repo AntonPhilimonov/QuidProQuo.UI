@@ -1,6 +1,6 @@
 ﻿angular.module('app.services')
     .service('ThingOrService', function() {
-        var _title = 'pls, work';
+        var _title;
         return {
             setTitle: function(title) {
                 _title = title;

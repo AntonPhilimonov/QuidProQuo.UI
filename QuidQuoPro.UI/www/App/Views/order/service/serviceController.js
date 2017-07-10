@@ -6,21 +6,23 @@
         onCreate();
 
         $scope.service = ThingOrService.getTitle();
-        $scope.items = [
-            { id: 'Ремонт' },
-            { id: 'Уборка' },
-            { id: 2 },
-            { id: 3 },
-            { id: 4 },
-            { id: 5 },
-            { id: 6 },
-            { id: 7 },
-            { id: 8 },
-            { id: 9 },
-            { id: 10 }
-        ];
+        
+        $scope.items = [];
+
+        if ($scope.service === 'Услуги:') {
+            $.get('http://localhost/api/categories/', function(data) {
+
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].IsCategory === true && data[i].CategoryType === 2) {
+                        $scope.items.push(data[i]);
+                    } 
+                }
+            },
+           'json');
+        }
 
         $scope.addOrder = function (item) {
             ThingOrService.setTitle(item);
         }
     });
+        

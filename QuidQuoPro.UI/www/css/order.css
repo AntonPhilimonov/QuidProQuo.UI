@@ -26,5 +26,5 @@
         background-image: linear-gradient(top, #f7f4f4 0%,#ffffff 100%);
     }
 .buttons{
- margin:100px 0px 0px 0px;
-        }
+ padding: 100px 0px 0px 0px;
+}

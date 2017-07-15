@@ -32,11 +32,11 @@
 }
 
 .service-svg {
-    background-image: url('images/УСЛУГИ.svg');
+    background-image: url('images/services.svg');
     vertical-align:middle;
 }
 
 .thing-svg {
-    background-image: url('images/ВЕЩИ.svg');
+    background-image: url('images/things.svg');
     vertical-align:middle;
 }

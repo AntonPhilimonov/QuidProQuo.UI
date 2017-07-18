@@ -1,27 +1,15 @@
 ﻿angular.module('app.controllers')
-    .controller('ThingController', function ($scope, ThingOrService) {
+    .controller('ThingController', function ($scope, thingOrService, categoriesService) {
         function onCreate(parameters) {
             $scope.title = i18n.t('tabs.tab-order-title');
         }
         onCreate();
 
-        $scope.thing = ThingOrService.getTitle();
+        $scope.thing = thingOrService.getTitle();
 
-        $scope.items = [];
-
-        if ($scope.thing === 'Вещи:') {
-            $.get('http://localhost/api/categories/', function(data) {
-
-                for (var i = 0; i < data.length; i++) {
-                    if (data[i].IsCategory === true && data[i].CategoryType === 1) {
-                        $scope.items.push(data[i]);
-                    } 
-                }
-            },
-           'json');
-        }
+        $scope.items = categoriesService.getCategories(1);
 
         $scope.addOrder = function (item) {
-            ThingOrService.setTitle(item);
+            thingOrService.setTitle(item);
         }
     });

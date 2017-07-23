@@ -1,5 +1,5 @@
 ﻿angular.module('app.services')
-    .service('thingOrService', function() {
+    .service('ThingOrService', function() {
         var _title;
         return {
             setTitle: function(title) {

@@ -1,5 +1,5 @@
 ﻿angular.module('app.services')
-    .service('categoriesService', function () {
+    .service('CategoriesService', function () {
         var items = [];
         this.getCategories = function (categoryType) {
             $.get('http://localhost/api/categories/', function (data) {

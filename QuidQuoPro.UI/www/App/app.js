@@ -129,7 +129,39 @@ angular.module('app',
                 templateUrl: 'App/Views/login/loginView.html',
                 controller: 'LoginController'
             })
+<<<<<<< HEAD
             .state('signup', {
+=======
+            .state('tab.List_activ', {
+                url: '/list_activ',
+                views: {
+                    'tab-account': {
+                        templateUrl: 'App/Views/account/List_activ.html',
+                        controller: 'ListsController'
+                    }
+                }
+            })
+             .state('tab.List_and', {
+                 url: '/list_and',
+                 views: {
+                     'tab-account': {
+                         templateUrl: 'App/Views/account/List_and.html',
+                         controller: 'ListsControllerAnd'
+                     }
+                 }
+             })
+            .state('tab.Reviews', {
+                url: '/reviews',
+                views: {
+                    'tab-account': {
+                        templateUrl: 'App/Views/account/Reviews.html',
+                        controller: 'ReviewsController'
+                    }
+                }
+            })
+
+          .state('signup', {
+>>>>>>> branch_LK
               url: '/signup',
               abstract: false,
               templateUrl: 'App/Views/login/signupView.html',

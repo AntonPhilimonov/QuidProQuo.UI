@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<ion-view>
     <ion-content overflow-scroll="false">
         <div class="list">
@@ -20,9 +21,62 @@
                     </p>
                     <p class="text-center col">
                         <a href="#/forgot-password">{{'loginView.forgotPassword' | i18next}}</a>
+=======
+﻿<ion-view view-title="{{'loginview.title' | i18next}}">
+    <ion-content overflow-scroll="false">
+        <div class="list_login">
+            <div class="context">
+                <svg class="hands" viewBox="0 0 180 143"></svg>
+            </div>
+            <div>
+                <div class="data">
+                        <div class="icon">
+                            <svg class="Login" viewBox="0 0 140 107"></svg>
+                        </div>
+                        <input class="field" placeholder="{{'loginview.userName' | i18next}}" type="text" ng-model="username">
+                </div>
+                <div class="data">
+                   
+                        <div class="icon">
+                            <svg class="lock" viewBox="0 0 85 99">
+                            </svg>
+                        </div>
+                        <input class="field" placeholder="{{'loginview.password' | i18next}}" type="password" ng-model="password">
+                   
+                </div>
+                <div class="padding">
+                    <button class="button_bt" ng-click="login(username, password)">
+                        {{'loginview.logIn' | i18next}}
+                    </button>
+                    <p class="text-center">
+                        <a href="#/signup">{{'loginview.signup' | i18next}}</a>
                     </p>
+                    <p class="text-center">
+                        <a href="#/forgot-password">{{'loginview.forgotPassword' | i18next}}</a>
+>>>>>>> branch_LK
+                    </p>
+                    <div class="conteiner">
+
+                        <div ng-click="vklogin()">
+                            <div class="social_network">
+
+                                <svg class="Vk" viewBox="0 0 85 80"></svg>
+                            </div>
+                        </div>
+                        <div ng-click="vklogin()">
+                            <div class="social_network">
+
+                                <svg class="Google" viewBox="0 0 85 80"></svg>
+                            </div>
+                        </div>
+                        <div ng-click="vklogin()">
+                            <div class="social_network">
+                                <svg class="Facedook" viewBox="0 0 85 80"></svg>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            </div>
     </ion-content>
 </ion-view>

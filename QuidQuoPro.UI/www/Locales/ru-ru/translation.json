@@ -19,6 +19,7 @@
     "captcha": "Код",
     "continue": "ПРОДОЛЖИТЬ"
   },
+<<<<<<< HEAD
   "orderview": {
     "question": "Что вы хотите предложить?",
     "thing": "Вещь",
@@ -31,5 +32,26 @@
     "vk": "ВКонтакте",
     "fb": "Facebook",
     "add": "Добавить"
+=======
+  "addressPicker": {
+    "cancelButtonCaption": "Отмена",
+    "chooseButtonCaption": "Выбрать",
+    "addressPickerTitleWidget": "Укажите адрес",
+    "countryTitle": "Страна",
+    "cityTitle": "Город",
+    "streetTitle": "Улица",
+    "houseTitle": "Дом",
+    "flatShortTitle": "Кв."
+  },
+  "orderview": {
+    "question": "Что вы хотите предложить?",
+    "thing": "Вещь",
+    "service": "Услуга"
+  },
+  "adsview": {
+    "title": "Что вы хотите предложить?",
+    "search": "Поиск",
+    "service": "Услуга"
+>>>>>>> branch_board
   }
 }

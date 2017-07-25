@@ -2,24 +2,24 @@
     <ion-content overflow-scroll="false">
         <div class="list">
             <label class="item item-input">
-                <input placeholder="{{'loginview.userName' | i18next}}" type="text" ng-model="username">
+                <input placeholder="{{'loginView.userName' | i18next}}" type="text" ng-model="username">
             </label>
             <label class="item item-input">
-                <input placeholder="{{'loginview.password' | i18next}}" type="password" ng-model="password">
+                <input placeholder="{{'loginView.password' | i18next}}" type="password" ng-model="password">
             </label>
             <div class="padding">
                 <button class="button button-block button-positive" ng-click="login(username, password)">
-                    {{'loginview.logIn' | i18next}}
+                    {{'loginView.logIn' | i18next}}
                 </button>
                 <button class="button button-block button-positive" ng-click="vklogin()">
-                    {{'loginview.VkLogin' | i18next}}
+                    {{'loginView.VkLogin' | i18next}}
                 </button>
                 <div class="row">
                     <p class="text-center col">
-                        <a href="#/signup">{{'loginview.signup' | i18next}}</a>
+                        <a href="#/signup">{{'loginView.signup' | i18next}}</a>
                     </p>
                     <p class="text-center col">
-                        <a href="#/forgot-password">{{'loginview.forgotPassword' | i18next}}</a>
+                        <a href="#/forgot-password">{{'loginView.forgotPassword' | i18next}}</a>
                     </p>
                 </div>
             </div>

@@ -6,7 +6,7 @@
     "tab-messages-title": "Сообщения",
     "tab-order-title": "Заказать"
   },
-  "loginview": {
+  "loginView": {
     "title": "Вход",
     "userName": "Логин",
     "password": "Пароль",
@@ -19,9 +19,7 @@
     "captcha": "Код",
     "continue": "ПРОДОЛЖИТЬ"
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "orderview": {
+  "orderView": {
     "question": "Что вы хотите предложить?",
     "thing": "Вещь",
     "service": "Услуга",
@@ -33,7 +31,7 @@
     "vk": "ВКонтакте",
     "fb": "Facebook",
     "add": "Добавить"
-=======
+  },
   "addressPicker": {
     "cancelButtonCaption": "Отмена",
     "chooseButtonCaption": "Выбрать",
@@ -44,21 +42,12 @@
     "houseTitle": "Дом",
     "flatShortTitle": "Кв."
   },
-=======
->>>>>>> branch_settings
-  "orderview": {
-    "question": "Что вы хотите предложить?",
-    "thing": "Вещь",
-    "service": "Услуга"
-  },
-<<<<<<< HEAD
-  "adsview": {
+  "adsView": {
     "title": "Что вы хотите предложить?",
     "search": "Поиск",
     "service": "Услуга"
->>>>>>> branch_board
-=======
-  "settings": {
+  },
+  "settingsView": {
     "title": "Настройки",
     "phone": "Добавте номер телефона",
     "location": "Добавте местоположение",
@@ -68,6 +57,5 @@
     "support": "Служба поддержки",
     "terms_of_us": "Пользовательское соглашение",
     "exit": "Выход из приложения"
->>>>>>> branch_settings
   }
 }

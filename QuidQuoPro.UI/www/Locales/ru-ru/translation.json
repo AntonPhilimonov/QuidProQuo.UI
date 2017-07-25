@@ -20,6 +20,7 @@
     "continue": "ПРОДОЛЖИТЬ"
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
   "orderview": {
     "question": "Что вы хотите предложить?",
     "thing": "Вещь",
@@ -43,15 +44,30 @@
     "houseTitle": "Дом",
     "flatShortTitle": "Кв."
   },
+=======
+>>>>>>> branch_settings
   "orderview": {
     "question": "Что вы хотите предложить?",
     "thing": "Вещь",
     "service": "Услуга"
   },
+<<<<<<< HEAD
   "adsview": {
     "title": "Что вы хотите предложить?",
     "search": "Поиск",
     "service": "Услуга"
 >>>>>>> branch_board
+=======
+  "settings": {
+    "title": "Настройки",
+    "phone": "Добавте номер телефона",
+    "location": "Добавте местоположение",
+    "notice": "Настройки уведомлений",
+    "private": "Настройки приватности",
+    "bonus": "Получить бонусы",
+    "support": "Служба поддержки",
+    "terms_of_us": "Пользовательское соглашение",
+    "exit": "Выход из приложения"
+>>>>>>> branch_settings
   }
 }

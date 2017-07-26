@@ -9,11 +9,11 @@
                 <p>{{'loginView.signup' | i18next}}</p>
             </label>
 
-            <p class="context">
+            <p id="sugnupImage">
                 <svg class="signup-svg" viewBox="0 0 130 127"></svg>
             </p>
 
-            <input class="input-text" placeholder="{{'loginView.userName' | i18next}}" type="text" ng-model="username">
+            <input class="input-text" placeholder="{{'loginView.userName' | i18next}}" type="email" ng-model="username">
             <input class="input-text" placeholder="{{'loginView.email' | i18next}}" type="email" ng-model="email">
             <input class="input-text" placeholder="{{'loginView.password' | i18next}}" type="password" ng-model="password">
             <input class="input-text" placeholder="{{'loginView.confirmPassword' | i18next}}" type="password" ng-model="confirmPassword">
@@ -21,7 +21,7 @@
             <div class="item item-input">
                 <input placeholder="{{'loginView.captcha' | i18next}}" type="password" ng-model="captchaValue">
                 <img class="captcha" ng-src="{{captchaPath}}">
-                <a class="button button-icon icon ion-android-refresh" ng-click="reloadCaptcha()"></a>
+                <a class="button button-icon ion-android-refresh" ng-click="reloadCaptcha()"></a>
             </div>
 
             <button id="signup-button" ng-click="login(username, password)">

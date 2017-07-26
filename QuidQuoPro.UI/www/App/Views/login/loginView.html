@@ -1,28 +1,4 @@
-<<<<<<< HEAD
-﻿<ion-view>
-    <ion-content overflow-scroll="false">
-        <div class="list">
-            <label class="item item-input">
-                <input placeholder="{{'loginView.userName' | i18next}}" type="text" ng-model="username">
-            </label>
-            <label class="item item-input">
-                <input placeholder="{{'loginView.password' | i18next}}" type="password" ng-model="password">
-            </label>
-            <div class="padding">
-                <button class="button button-block button-positive" ng-click="login(username, password)">
-                    {{'loginView.logIn' | i18next}}
-                </button>
-                <button class="button button-block button-positive" ng-click="vklogin()">
-                    {{'loginView.VkLogin' | i18next}}
-                </button>
-                <div class="row">
-                    <p class="text-center col">
-                        <a href="#/signup">{{'loginView.signup' | i18next}}</a>
-                    </p>
-                    <p class="text-center col">
-                        <a href="#/forgot-password">{{'loginView.forgotPassword' | i18next}}</a>
-=======
-﻿<ion-view view-title="{{'loginview.title' | i18next}}">
+<ion-view view-title="{{'loginView.title' | i18next}}">
     <ion-content overflow-scroll="false">
         <div class="list_login">
             <div class="context">
@@ -33,7 +9,7 @@
                         <div class="icon">
                             <svg class="Login" viewBox="0 0 140 107"></svg>
                         </div>
-                        <input class="field" placeholder="{{'loginview.userName' | i18next}}" type="text" ng-model="username">
+                        <input class="field reference-login" placeholder="{{'loginView.userName' | i18next}}" type="email" ng-model="username">
                 </div>
                 <div class="data">
                    
@@ -41,19 +17,18 @@
                             <svg class="lock" viewBox="0 0 85 99">
                             </svg>
                         </div>
-                        <input class="field" placeholder="{{'loginview.password' | i18next}}" type="password" ng-model="password">
+                        <input class="field" placeholder="{{'loginView.password' | i18next}}" type="password" ng-model="password">
                    
                 </div>
                 <div class="padding">
                     <button class="button_bt" ng-click="login(username, password)">
-                        {{'loginview.logIn' | i18next}}
+                        {{'loginView.logIn' | i18next}}
                     </button>
                     <p class="text-center">
-                        <a href="#/signup">{{'loginview.signup' | i18next}}</a>
+                        <a class="reference-login" href="#/signup">{{'loginView.signup' | i18next}}</a>
                     </p>
                     <p class="text-center">
-                        <a href="#/forgot-password">{{'loginview.forgotPassword' | i18next}}</a>
->>>>>>> branch_LK
+                        <a class="reference-login" href="#/forgot-password">{{'loginView.forgotPassword' | i18next}}</a>
                     </p>
                     <div class="conteiner">
 

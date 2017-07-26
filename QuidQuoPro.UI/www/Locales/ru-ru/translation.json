@@ -32,16 +32,6 @@
     "fb": "Facebook",
     "add": "Добавить"
   },
-  "addressPicker": {
-    "cancelButtonCaption": "Отмена",
-    "chooseButtonCaption": "Выбрать",
-    "addressPickerTitleWidget": "Укажите адрес",
-    "countryTitle": "Страна",
-    "cityTitle": "Город",
-    "streetTitle": "Улица",
-    "houseTitle": "Дом",
-    "flatShortTitle": "Кв."
-  },
   "adsView": {
     "title": "Что вы хотите предложить?",
     "search": "Поиск",

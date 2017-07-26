@@ -129,9 +129,7 @@ angular.module('app',
                 templateUrl: 'App/Views/login/loginView.html',
                 controller: 'LoginController'
             })
-<<<<<<< HEAD
-            .state('signup', {
-=======
+
             .state('tab.List_activ', {
                 url: '/list_activ',
                 views: {
@@ -161,7 +159,6 @@ angular.module('app',
             })
 
           .state('signup', {
->>>>>>> branch_LK
               url: '/signup',
               abstract: false,
               templateUrl: 'App/Views/login/signupView.html',

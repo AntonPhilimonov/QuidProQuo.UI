@@ -1,10 +1,11 @@
-<ion-header-bar>
-    <input class="input-text" placeholder="{{::'adsView.search' | i18next}}" type="text">
-</ion-header-bar>
 <ion-view view-title="{{::'tabs.tab-ads-title' | i18next}}">
     <ion-content overflow-scroll="false">
-        <div>
-
-        </div>
+        <input class="input-text" placeholder="{{::'adsView.search' | i18next}}" type="text" ng-model="searchItem">
+        <button class="button" ng-click="search()">SEARCH</button>
+        <ion-list>
+            <ion-div ng-repeat="item in items">
+                <a class="button button-category">{{item.objectBase.Title}}</a>
+            </ion-div>
+        </ion-list>
     </ion-content>
 </ion-view>

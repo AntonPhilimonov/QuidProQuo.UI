@@ -9,15 +9,15 @@
         </div>
 
         <label class="item item-input">
-            <input placeholder="{{'orderView.title' | i18next}}" type="text">
+            <input placeholder="{{::'orderView.title' | i18next}}" type="text" ng-model="titleOrder.title" ng-model-options="{ getterSetter: true }">
         </label>
 
         <label class="item item-input">
-            <input placeholder="{{'orderView.description' | i18next}}" type="text">
+            <input placeholder="{{::'orderView.description' | i18next}}" type="text" ng-model="descriptionOrder.description" ng-model-options="{ getterSetter: true }">
         </label>
 
         <label class="item item-input">
-           {{'orderView.category' | i18next}} {{category}}
+           {{'orderView.category' | i18next}} {{category.Title}}
         </label>
 
         <button class="button button-block icon-right ion-location">
@@ -38,6 +38,6 @@
             </label>
         </div>
 
-        <button class="button button-block">{{'orderView.add' | i18next}}</button>
+        <button class="button button-block" ng-click="addOrder()">{{'orderView.add' | i18next}}</button>
     </ion-content>
 </ion-view>

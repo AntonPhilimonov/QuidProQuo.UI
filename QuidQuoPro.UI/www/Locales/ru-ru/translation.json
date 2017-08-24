@@ -4,7 +4,8 @@
     "tab-ads-title": "Объявления",
     "tab-favorites-title": "Избранное",
     "tab-messages-title": "Сообщения",
-    "tab-order-title": "Заказать"
+    "tab-order-title": "Заказать",
+    "tab-settings-title": "Настройки"
   },
   "loginView": {
     "title": "Вход",

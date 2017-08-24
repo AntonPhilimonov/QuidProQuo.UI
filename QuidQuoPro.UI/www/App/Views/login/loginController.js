@@ -15,7 +15,7 @@
                 // TODO Anton - нужно подумать, как передавать из настроек флаг, что это DEV версия, и можно логиниться без учетных данных.
                 if (IS_DEV_VERSION) {
                     $location.path('/tab/account');
-                    $scope.$apply();
+                    //$scope.$apply(); - ошибка, скоуп обновится сам
                 } else {
                     userApiService.login(username, password)
                         .then(function() {

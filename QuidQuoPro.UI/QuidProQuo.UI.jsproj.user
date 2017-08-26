@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ReferenceCachePath>C:\Users\Dns\AppData\Local\Temp\r4iknvd3_QuidProQuo.UI_refcache</ReferenceCachePath>
+    <ReferenceCachePath>C:\Users\123\AppData\Local\Temp\i4yeespj_QuidProQuo.UI_refcache</ReferenceCachePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
-    <DebuggerFlavor>RippleNexusS</DebuggerFlavor>
+    <DebuggerFlavor>RippleNexus</DebuggerFlavor>
     <AndroidEmulatorID>AndroidEmulator;Google Android Emulator</AndroidEmulatorID>
   </PropertyGroup>
 </Project>

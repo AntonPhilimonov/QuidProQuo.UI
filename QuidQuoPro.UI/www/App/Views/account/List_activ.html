@@ -4,17 +4,19 @@
         </ion-nav-back-button>
     </ion-nav-bar>
     <ion-content overflow-scroll="false">
-        <ul id="col">
-            <li>
+
+        <ul id="col"> 
+            <li ng-repeat="order in orders">
                 <div class="card">
                     <div class="item item-image">
                             <a>
                                 <img class="full-image" src="../../../css/images/No_image.png" width="150" height="150" />
                             </a>
-                            <a class="item item-body">Добавить объявление</a>
+                            <a class="item item-body">{{order.Title}}</a>
                     </div>
                 </div>
             </li>
         </ul>
+
     </ion-content>
 </ion-view>

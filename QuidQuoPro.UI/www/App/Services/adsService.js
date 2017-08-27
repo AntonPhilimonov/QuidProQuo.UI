@@ -4,9 +4,7 @@
        '$http',
 
        function ($q, $http) {
-          
            return {
-
                getOrders: function () {
                    var deferred = $q.defer();
                    $http({ method: 'GET', url: 'http://localhost/api/order/'})
@@ -17,11 +15,7 @@
                                     deferred.reject(res.status);
                                 });                  
                    return deferred.promise;
-
                }
-
            }
- 
        }
-
     ]);

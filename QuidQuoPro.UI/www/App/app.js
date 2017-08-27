@@ -47,7 +47,7 @@ angular.module('app',
                 views: {
                     'tab-ads': {
                         templateUrl: 'App/Views/ads/adsView.html',
-                        controller: 'AdsController'
+                        controller: 'adsController'
                     }
                 }
             })

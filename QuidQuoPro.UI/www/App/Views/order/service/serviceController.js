@@ -9,7 +9,6 @@
             });
         }
         onCreate();
-        //sortCateg();
 
         $scope.addOrder = function (item) {
             ThingOrService.setTitle(item);

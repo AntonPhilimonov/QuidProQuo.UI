@@ -4,5 +4,5 @@
             $scope.title = i18n.t('tabs.tab-account-title');
         }
 
-        onCreate();
+        onCreate(); 
     });

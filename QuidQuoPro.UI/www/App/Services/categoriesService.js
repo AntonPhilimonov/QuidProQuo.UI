@@ -1,4 +1,5 @@
 ﻿angular.module('app.services')
+<<<<<<< HEAD
     .factory('CategoriesService', [
         '$q',
         '$http',
@@ -14,6 +15,16 @@
                                 deferred.reject(res.status);
                             });
                     return deferred.promise;
+=======
+    .service('CategoriesService', function () {
+        this.getCategories = function (categoryType) {
+            var items = [];
+            $.get('http://localhost/api/category/', function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].IsCategory === true && data[i].CategoryType === categoryType) {
+                        items.push(data[i]);
+                     }
+>>>>>>> branch_available_ads
                 }
             }
         }

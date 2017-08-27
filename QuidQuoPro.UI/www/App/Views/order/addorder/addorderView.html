@@ -20,9 +20,13 @@
            {{'orderView.category' | i18next}} {{category.Title}}
         </label>
 
-        <button class="button button-block icon-right ion-location">
-           {{'orderView.location' | i18next}}
-        </button>
+        <label class="item item-input">
+            <input placeholder="{{::'orderView.location' | i18next}}" type="text" ng-model="locationOrder.location" ng-model-options="{ getterSetter: true }">
+        </label>
+
+        <!--<button class="button button-block icon-right ion-location">
+           'orderView.location' | i18next
+        </button>-->
 
         <label> {{'orderView.share' | i18next}} </label>
         <div class="item item-checkbox">

@@ -6,8 +6,16 @@
             return {
                 getCategories: function(catType) {
                     var deferred = $q.defer();
-                    $http({ method: 'GET', url: 'http://localhost/api/category/', params: { 'categoryType': catType } })
-                        .then(function success(res) {
+
+                    var req = {
+                        method: 'GET',
+                        url: 'http://localhost/api/category/',
+                        params: {
+                            'categoryType': catType,
+                            'access_token': '{D603EAE7-6804-42F8-8332-5136C2EE20C9}'
+                        }
+                    }
+                    $http(req).then(function success(res) {
                                 deferred.resolve(res.data);
                             },
                             function error(res) {

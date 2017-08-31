@@ -96,6 +96,15 @@ angular.module('app',
                     }
                 }
             })
+            .state('tab.editorder', {
+                url: '/editorder',
+                views: {
+                    'tab-account': {
+                        templateUrl: 'App/Views/order/editorder/editorderView.html',
+                        controller: 'EditOrderController'
+                    }
+                }
+            })
             .state('tab.messages', {
                 url: '/messages',
                 views: {
@@ -135,16 +144,16 @@ angular.module('app',
                 views: {
                     'tab-account': {
                         templateUrl: 'App/Views/account/List_activ.html',
-                        controller: 'ListsController'
+                        controller: 'ListActivController'
                     }
                 }
             })
-             .state('tab.List_and', {
-                 url: '/list_and',
+             .state('tab.List_end', {
+                 url: '/list_end',
                  views: {
                      'tab-account': {
-                         templateUrl: 'App/Views/account/List_and.html',
-                         controller: 'ListsControllerAnd'
+                         templateUrl: 'App/Views/account/List_end.html',
+                         controller: 'ListsControllerEnd'
                      }
                  }
              })

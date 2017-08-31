@@ -1,5 +1,5 @@
 ﻿angular.module('app.controllers')
-    .controller('AddOrderController', function ($scope, $location, ThingOrService, addOrderService) {
+    .controller('AddOrderController', function ($scope, $location, ThingOrService, orderService) {
         function onCreate(parameters) {
             //$scope.title = i18n.t('tabs.tab-order-title');
             $scope.category = ThingOrService.getTitle();
@@ -34,7 +34,7 @@
             order.orderFields[3] = $scope.category.ID;
             order.orderFields[4] = location;
 
-            if (addOrderService.addNewOrder(order)) {
+            if (orderService.addNewOrder(order)) {
                 $location.path('/tab/list_activ');
             }
         }

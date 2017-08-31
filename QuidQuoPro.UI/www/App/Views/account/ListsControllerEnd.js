@@ -1,5 +1,5 @@
 ﻿angular.module('app.controllers')
-    .controller('ListsControllerAnd', function ($scope) {
+    .controller('ListsControllerEnd', function ($scope) {
         function onCreate(parameters) {
             $scope.title = 'newAdd';
         }

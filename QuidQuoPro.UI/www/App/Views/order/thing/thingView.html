@@ -5,9 +5,9 @@
     </ion-nav-bar>
     <ion-content overflow-scroll="false">
         <div>
-            <p>{{thing}}</p>
+            <p>{{'orderView.things' | i18next}}</p>
         </div>
-        <ion-list>
+        <ion-list id="list">
             <ion-div ng-repeat="item in items" >
                 <a class="button button-category" ng-click="addOrder(item)" href="#/tab/subcateg">{{item.Title}}</a>
             </ion-div>

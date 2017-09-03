@@ -1,11 +1,11 @@
 ﻿angular.module('app.controllers')
-    .controller('SubcategoryController', function ($scope, ThingOrService) {
+    .controller('SubcategoryController', function ($scope, localStorage) {
         function onCreate(parameters) {
             $scope.title = i18n.t('tabs.tab-order-title');
         }
         onCreate();
 
-        var category = ThingOrService.getTitle();
+        var category = localStorage.get();
         $scope.category = category.Title;
         $scope.items = [];
 
@@ -16,6 +16,6 @@
         }
 
         $scope.addOrder = function (item) {
-            ThingOrService.setTitle(item);
+            localStorage.set(item);
         }
     });

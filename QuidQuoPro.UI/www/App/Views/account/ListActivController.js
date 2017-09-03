@@ -1,5 +1,5 @@
 ﻿angular.module('app.controllers')
-    .controller('ListActivController', function ($scope, $location, ThingOrService) {
+    .controller('ListActivController', function ($scope, $location, localStorage) {
         function onCreate(parameters) {
             $scope.orders = [
             {
@@ -29,7 +29,7 @@
         onCreate();
         
         $scope.editOrder = function(order) {
-            ThingOrService.setTitle(order);
+            localStorage.set(order);
             $location.path('/tab/editorder');
 
         }

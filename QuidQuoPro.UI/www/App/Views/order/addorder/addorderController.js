@@ -1,8 +1,7 @@
 ﻿angular.module('app.controllers')
-    .controller('AddOrderController', function ($scope, $location, ThingOrService, orderService) {
+    .controller('AddOrderController', function ($scope, $location, localStorage, orderService) {
         function onCreate(parameters) {
-            //$scope.title = i18n.t('tabs.tab-order-title');
-            $scope.category = ThingOrService.getTitle();
+            $scope.category = localStorage.get();
         }
         onCreate();
         var title;

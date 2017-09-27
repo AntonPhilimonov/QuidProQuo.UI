@@ -96,6 +96,17 @@ angular.module('app',
                     }
                 }
             })
+
+               .state('tab.adsinfo', {
+                   url: '/adsinfo',
+                   views: {
+                       'tab-ads': {
+                           templateUrl: 'App/Views/ads/adsInfo.html',
+                           controller: 'AdsInfoController'
+                       }
+                   }
+               })
+
             .state('tab.messages', {
                 url: '/messages',
                 views: {
@@ -148,6 +159,9 @@ angular.module('app',
                      }
                  }
              })
+
+
+
             .state('tab.Reviews', {
                 url: '/reviews',
                 views: {

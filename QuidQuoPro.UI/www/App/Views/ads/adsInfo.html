@@ -1,0 +1,25 @@
+﻿<ion-view>
+    <ion-nav-bar class="bar bar-header">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content overflow-scroll="false">
+
+        <div class="row">
+            <img src="../../../../css/images/no_image.png" class="photo_order" />
+        </div>
+
+        <label class="item item-input">
+            <input placeholder="{{'orderView.title' | i18next}}" type="text"  ng-model="order.objectBase.Title" disabled>
+        </label>
+
+        <label class="item item-input">
+            <input placeholder="{{'orderView.description' | i18next}}" type="text" ng-model="order.objectBase.Description" disabled>
+        </label>
+
+        <label class="item item-input">
+            {{'orderView.category' | i18next}} {{order.objectBase.Category}}
+        </label>
+
+    </ion-content>
+</ion-view>

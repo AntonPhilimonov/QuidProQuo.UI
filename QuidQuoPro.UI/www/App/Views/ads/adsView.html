@@ -3,22 +3,17 @@
 </ion-header-bar>
 <ion-view view-title="{{::'tabs.tab-ads-title' | i18next}}">
     <ion-content overflow-scroll="false">
-       
             <ul id="col">
-             
                     <li  ng-repeat="order in orders">
-                        <div class="card" >
-                            <div class="item item-image" id="load_div">
+                        <div class="card">
+                            <div class="item item-image" id="load_div" ng-click="adsInfo(order)">
                                 <a>
                                     <img class="full-image" src="../../../css/images/No_image.png" width="150" height="150" />
                                 </a>
-                                <a class="item item-body">{{order.objectBase.Title}}</a>
+                                <a class="item item-body">{{order.objectBase.Title}}</></a>
                             </div>
                         </div>
                     </li>
-              
-</ul>
-       
+                </ul>
     </ion-content>
-    
 </ion-view>

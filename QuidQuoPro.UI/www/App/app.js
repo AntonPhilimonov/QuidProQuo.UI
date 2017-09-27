@@ -47,7 +47,7 @@ angular.module('app',
                 views: {
                     'tab-ads': {
                         templateUrl: 'App/Views/ads/adsView.html',
-                        controller: 'adsController'
+                        controller: 'AdsController'
                     }
                 }
             })
@@ -96,15 +96,17 @@ angular.module('app',
                     }
                 }
             })
-            .state('tab.editorder', {
-                url: '/editorder',
-                views: {
-                    'tab-account': {
-                        templateUrl: 'App/Views/order/editorder/editorderView.html',
-                        controller: 'EditOrderController'
-                    }
-                }
-            })
+
+               .state('tab.adsinfo', {
+                   url: '/adsinfo',
+                   views: {
+                       'tab-ads': {
+                           templateUrl: 'App/Views/ads/adsInfo.html',
+                           controller: 'AdsInfoController'
+                       }
+                   }
+               })
+
             .state('tab.messages', {
                 url: '/messages',
                 views: {
@@ -144,19 +146,22 @@ angular.module('app',
                 views: {
                     'tab-account': {
                         templateUrl: 'App/Views/account/List_activ.html',
-                        controller: 'ListActivController'
+                        controller: 'ListsController'
                     }
                 }
             })
-             .state('tab.List_end', {
-                 url: '/list_end',
+             .state('tab.List_and', {
+                 url: '/list_and',
                  views: {
                      'tab-account': {
-                         templateUrl: 'App/Views/account/List_end.html',
-                         controller: 'ListsControllerEnd'
+                         templateUrl: 'App/Views/account/List_and.html',
+                         controller: 'ListsControllerAnd'
                      }
                  }
              })
+
+
+
             .state('tab.Reviews', {
                 url: '/reviews',
                 views: {

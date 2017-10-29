@@ -38,6 +38,24 @@
                     });
 
                     return res;
+                },
+                deleteOrder: function(id) {
+                    var res = true;
+
+                    var req = {
+                        method: 'DELETE',
+                        url: 'http://localhost/api/order/',
+                        params: {
+                            'access_token': '{D603EAE7-6804-42F8-8332-5136C2EE20C9}',
+                            'id': id
+                        }
+                    }
+                    $http(req).then(function success() {},
+                    function error() {
+                        res = false;
+                    });
+
+                    return res;
                 }
             }
         }

@@ -47,7 +47,7 @@ angular.module('app',
                 views: {
                     'tab-ads': {
                         templateUrl: 'App/Views/ads/adsView.html',
-                        controller: 'adsController'
+                        controller: 'AdsController'
                     }
                 }
             })
@@ -84,6 +84,15 @@ angular.module('app',
                     'tab-order': {
                         templateUrl: 'App/Views/order/subcategory/subcategoryView.html',
                         controller: 'SubcategoryController'
+                    }
+                }
+            })
+            .state('tab.revorder', {
+                url: '/revorder',
+                views: {
+                    'tab-account': {
+                        templateUrl: 'App/Views/order/revorder/revorderView.html',
+                        controller: 'RevOrderController'
                     }
                 }
             })

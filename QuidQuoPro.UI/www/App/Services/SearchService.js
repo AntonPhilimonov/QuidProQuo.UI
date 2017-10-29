@@ -1,15 +1,27 @@
 ﻿angular.module('app.services')
-    .service('SearchService', function () {
-        this.search = function (searchItem) {
-            var items = [];
+    .factory('SearchService', [
+        '$http',
+        function($http) {
+            return {
+                search: function (searchItem) {
+                    var items = [];
 
-            $.get('http://localhost/api/search', { item: searchItem })
-                .done(function (data) {
-                    var temp = JSON.parse(data);
-                    for (var i = 0; i < temp.length; i++) {
-                        items.push(temp[i]);
-                    } 
-                });
-            return items;
+                    var req = {
+                        method: 'GET',
+                        url: 'http://localhost/api/search/',
+                        params: {
+                            'item': searchItem,
+                            'access_token': '{D603EAE7-6804-42F8-8332-5136C2EE20C9}'
+                        }
+                    }
+                    $http(req).then(function success(data) {
+                        var temp = JSON.parse(data);
+                        for (var i = 0; i < temp.length; i++) {
+                            items.push(temp[i]);
+                        }
+                    });
+                    return items;
+                }
+            }
         }
-    });
+    ]);

@@ -28,9 +28,8 @@
         }
         onCreate();
         
-        $scope.editOrder = function(order) {
+        $scope.revOrder = function(order) {
             localStorage.set(order);
-            $location.path('/tab/editorder');
-
+            $location.path('/tab/revorder');
         }
     });

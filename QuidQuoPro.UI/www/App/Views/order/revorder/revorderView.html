@@ -1,0 +1,56 @@
+﻿<ion-view>
+    <ion-nav-bar class="bar bar-header">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content overflow-scroll="false">
+        
+        <button class="button" ng-click="editOrdere(order)">
+            Редактировать
+        </button>
+        <button class="button" ng-click="deleteOrder(order.ID)">
+            Удалить
+        </button>
+
+        <div class="row">
+            <img src="../../../../css/images/no_image.png" class="photo_order"/>
+        </div>
+
+        <label class="item item-input">
+            <!--<input placeholder="{::'orderView.title' | i18next}}" type="text" ng-bind="order.objectBase.Title">-->
+            {{order.objectBase.Title}}
+        </label>
+
+        <label class="item item-input">
+            <!--<input placeholder="{::'orderView.description' | i18next}}" type="text" ng-bind="order.objectBase.Description">-->
+            {{order.objectBase.Description}}
+        </label>
+
+        <label class="item item-input">
+            {{'orderView.category' | i18next}} {{order.category.Title}}
+        </label>
+
+        <label class="item item-input">
+            <!--<input placeholder="{::'orderView.location' | i18next}}" type="text" ng-bind="order.objectBase.Location">-->
+            {{order.objectBase.Location}}
+        </label>
+
+        <!--<button class="button button-block icon-right ion-location">
+            'orderView.location' | i18next
+        </button>-->
+
+        <label> {{'orderView.share' | i18next}} </label>
+        <div class="item item-checkbox">
+            {{'orderView.vk' | i18next}}
+            <label class="checkbox">
+                <input type="checkbox"/>
+            </label>
+        </div>
+        <div class="item item-checkbox">
+            {{'orderView.fb' | i18next}}
+            <label class="checkbox">
+                <input type="checkbox"/>
+            </label>
+        </div>
+    </ion-content>
+</ion-view>

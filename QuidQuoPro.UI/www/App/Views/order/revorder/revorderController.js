@@ -1,5 +1,5 @@
 ﻿angular.module('app.controllers')
-    .controller('RevOrderController', function ($scope, $location, localStorage, orderService) {
+    .controller('RevOrderController', function ($scope, $location, $window, localStorage, orderService) {
         function onCreate(parameters) {
             $scope.order = localStorage.get();
         }
@@ -12,6 +12,7 @@
         $scope.deleteOrder = function (id) {
             if (orderService.deleteOrder(id)) {
                 $location.path('/tab/list_activ');
+                $window.location.reload();
             } else {
                 console.log('error');
             }

@@ -76,12 +76,12 @@
                     }
 
                     $http(req).then(function success(res) {
-                        deferred.resolve(res.data);
+                        deferred.resolve(res.status);
                     },
                     function error(res) {
                         deferred.reject(res.status);
                     });
-                    return deferred.promise;
+                    return true;
                 }
             }
         }

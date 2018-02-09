@@ -7,9 +7,16 @@
            return {
                getOrders: function () {
                    var deferred = $q.defer();
-                   $http({ method: 'GET', url: 'http://localhost/api/order/'})
-                            .then(function success(res) {
-                                 deferred.resolve(res.data);
+
+                   var req = {
+                       method: 'GET',
+                       url: 'http://localhost/api/order/',
+                       params: {
+                           'access_token': '{D603EAE7-6804-42F8-8332-5136C2EE20C9}'
+                       }
+                   }
+                   $http(req).then(function success(res) {
+                                deferred.resolve(res.data);
                             },
                                 function error(res) {
                                     deferred.reject(res.status);

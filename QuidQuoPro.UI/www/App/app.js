@@ -87,6 +87,15 @@ angular.module('app',
                     }
                 }
             })
+            .state('tab.revorder', {
+                url: '/revorder',
+                views: {
+                    'tab-account': {
+                        templateUrl: 'App/Views/order/revorder/revorderView.html',
+                        controller: 'RevOrderController'
+                    }
+                }
+            })
             .state('tab.addorder', {
                 url: '/addorder',
                 views: {

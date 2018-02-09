@@ -7,7 +7,7 @@
         
         $scope.saveOrder = function (order) {
             if (orderService.editOrder(order)) {
-                $location.path('/tab/list_activ');
+                $location.path('/tab/revorder');
             } else {
                 console.log('error');
             }

@@ -150,21 +150,21 @@ angular.module('app',
                 controller: 'LoginController'
             })
 
-            .state('tab.List_activ', {
+            .state('tab.list_activ', {
                 url: '/list_activ',
                 views: {
                     'tab-account': {
                         templateUrl: 'App/Views/account/List_activ.html',
-                        controller: 'ListsController'
+                        controller: 'ListActivController'
                     }
                 }
             })
-             .state('tab.List_and', {
-                 url: '/list_and',
+             .state('tab.list_end', {
+                 url: '/list_end',
                  views: {
                      'tab-account': {
-                         templateUrl: 'App/Views/account/List_and.html',
-                         controller: 'ListsControllerAnd'
+                         templateUrl: 'App/Views/account/List_end.html',
+                         controller: 'ListsControllerEnd'
                      }
                  }
              })

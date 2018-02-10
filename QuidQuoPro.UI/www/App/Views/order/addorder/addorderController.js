@@ -24,6 +24,7 @@
         };
 
         $scope.addOrder = function () {
+            var id = 1;
             var order = {
             orderFields: []
             };
@@ -33,8 +34,9 @@
             order.orderFields[3] = $scope.category.ID;
             order.orderFields[4] = location;
 
-            if (orderService.addNewOrder(order)) {
+            if (orderService.addNewOrder(order, id)) {
                 $location.path('/tab/list_activ');
+                $window.location.reload();
             }
         }
     });

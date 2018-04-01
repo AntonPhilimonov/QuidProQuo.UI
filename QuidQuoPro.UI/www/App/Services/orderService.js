@@ -45,14 +45,15 @@
                     });
                     return deferred.promise;
                 },
-                editOrder: function (order) {
+                editOrder: function (order, id) {
                     var deferred = $q.defer();
 
                     var req = {
                         method: 'PUT',
                         url: 'http://localhost/api/order/',
                         params: {
-                            'access_token': '{D603EAE7-6804-42F8-8332-5136C2EE20C9}'
+                            'access_token': '{D603EAE7-6804-42F8-8332-5136C2EE20C9}',
+                            'id': id
                         },
                         data: order
                     }

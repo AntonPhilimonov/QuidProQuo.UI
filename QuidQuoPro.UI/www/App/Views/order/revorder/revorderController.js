@@ -11,7 +11,7 @@
         }
         $scope.deleteOrder = function (id) {
             if (orderService.deleteOrder(id)) {
-                $location.path('/tab/list_activ');
+                $location.path('/tab/list_activ'); 
                 $window.location.reload();
             } else {
                 console.log('error');

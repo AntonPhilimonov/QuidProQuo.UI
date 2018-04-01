@@ -5,7 +5,7 @@
     </ion-nav-bar>
     <ion-content overflow-scroll="false">
         
-        <button class="button" ng-click="editOrdere(order)">
+        <button class="button" ng-click="editOrder(order)">
             Редактировать
         </button>
         <button class="button" ng-click="deleteOrder(order.Id)">
@@ -27,7 +27,7 @@
         </label>
 
         <label class="item item-input">
-            {{'orderView.category' | i18next}} {{order.Category.Title}}
+            {{'orderView.category' | i18next}} {{order.ObjectBase.CategoryItem.Title}}
         </label>
 
         <label class="item item-input">

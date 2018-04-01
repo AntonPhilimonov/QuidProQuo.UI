@@ -96,6 +96,15 @@ angular.module('app',
                     }
                 }
             })
+            .state('tab.editorder', {
+                url: '/editorder',
+                views: {
+                    'tab-account': {
+                        templateUrl: 'App/Views/order/editorder/editorderView.html',
+                        controller: 'EditOrderController'
+                    }
+                }
+            })
             .state('tab.addorder', {
                 url: '/addorder',
                 views: {
@@ -168,9 +177,6 @@ angular.module('app',
                      }
                  }
              })
-
-
-
             .state('tab.Reviews', {
                 url: '/reviews',
                 views: {

@@ -10,15 +10,15 @@
         </div>
 
         <label class="item item-input">
-            <input placeholder="{{'orderView.title' | i18next}}" type="text"  ng-model="order.objectBase.Title" disabled>
+            <input placeholder="{{'orderView.title' | i18next}}" type="text"  ng-model="order.ObjectBase.Title" disabled>
         </label>
 
         <label class="item item-input">
-            <input placeholder="{{'orderView.description' | i18next}}" type="text" ng-model="order.objectBase.Description" disabled>
+            <input placeholder="{{'orderView.description' | i18next}}" type="text" ng-model="order.ObjectBase.Description" disabled>
         </label>
 
         <label class="item item-input">
-            {{'orderView.category' | i18next}} {{order.objectBase.Category}}
+            {{'orderView.category' | i18next}} {{order.ObjectBase.CategoryItem.Title}}
         </label>
 
     </ion-content>

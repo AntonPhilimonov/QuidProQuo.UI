@@ -1,19 +1,31 @@
 ﻿angular.module('app.controllers')
-    .controller('AdsController', function ($scope, $location, AdsService, ThingOrService) {
+    .controller('AdsController', function ($scope, $location, orderService, localStorage) {
     function onCreate(parameters) {
-
-        $scope.title = i18n.t('tabs.tab-ads-title');
-
-        var promiseObj = AdsService.getOrders();
+        var promiseObj = orderService.getOrders();
         promiseObj.then(function (value) {
             $scope.orders = value;
         });
-
-        }
+    }
     onCreate();
 
+    var title;
+
+    $scope.titleAds = {
+        title: function (newTitle) {
+            return arguments.length ? (title = newTitle) : title;
+        }
+    };
+
+    $scope.findOrders = function () {
+        $scope.orders = null;
+        var promiseObj = orderService.findOrders(title);
+        promiseObj.then(function (value) {
+            $scope.orders = value;
+        });
+    }
+
     $scope.adsInfo = function (order) {
-        ThingOrService.setTitle(order);
+        localStorage.set(order);
         $location.path('/tab/adsinfo');
     }
     });

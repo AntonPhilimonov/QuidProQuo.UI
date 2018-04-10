@@ -4,6 +4,43 @@
         '$http',
         function ($q, $http) {
             return {
+                getOrders: function () {
+                    var deferred = $q.defer();
+
+                    var req = {
+                        method: 'GET',
+                        url: 'http://localhost/api/order/',
+                        params: {
+                            'access_token': '{D603EAE7-6804-42F8-8332-5136C2EE20C9}'
+                        }
+                    }
+                    $http(req).then(function success(res) {
+                        deferred.resolve(JSON.parse(res.data));
+                    },
+                    function error(res) {
+                        deferred.reject(res.status);
+                    });
+                    return deferred.promise;
+                },
+                findOrders: function (item) {
+                    var deferred = $q.defer();
+
+                    var req = {
+                        method: 'GET',
+                        url: 'http://localhost/api/order/',
+                        params: {
+                            'access_token': '{D603EAE7-6804-42F8-8332-5136C2EE20C9}',
+                            'item': item
+                        }
+                    }
+                    $http(req).then(function success(res) {
+                        deferred.resolve(JSON.parse(res.data));
+                    },
+                    function error(res) {
+                        deferred.reject(res.status);
+                    });
+                    return deferred.promise;
+                },
                 usersActivOrders: function(id) {
                     var deferred = $q.defer();
 

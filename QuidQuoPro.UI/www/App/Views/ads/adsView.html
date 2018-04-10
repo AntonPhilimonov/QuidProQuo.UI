@@ -1,5 +1,6 @@
 <ion-header-bar>
-    <input class="input-text" placeholder="{{::'adsView.search' | i18next}}" type="text">
+    <input class="input-text" placeholder="{{::'adsView.search' | i18next}}" type="text" ng-model="titleAds.title" ng-model-options="{ getterSetter: true }">
+    <button class="button" ng-click="findOrders()">{{'adsView.ok' | i18next}}</button>
 </ion-header-bar>
 <ion-view view-title="{{::'tabs.tab-ads-title' | i18next}}">
     <ion-content overflow-scroll="false">
@@ -8,9 +9,9 @@
                         <div class="card">
                             <div class="item item-image" id="load_div" ng-click="adsInfo(order)">
                                 <a>
-                                    <img class="full-image" src="../../../css/images/No_image.png" width="150" height="150" />
+                                    <img class="full-image" src="../../../css/images/No_image.png" width="150" height="150"/>
                                 </a>
-                                <a class="item item-body">{{order.objectBase.Title}}</></a>
+                                <a class="item item-body">{{order.ObjectBase.Title}}</a>
                             </div>
                         </div>
                     </li>

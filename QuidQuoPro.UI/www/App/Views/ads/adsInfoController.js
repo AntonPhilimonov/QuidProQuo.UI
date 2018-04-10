@@ -1,7 +1,7 @@
 ﻿angular.module('app.controllers')
-    .controller('AdsInfoController', function ($scope, ThingOrService) {
+    .controller('AdsInfoController', function ($scope, localStorage) {
         function onCreate(parameters) {
-            $scope.order = ThingOrService.getTitle();
+            $scope.order = localStorage.get();
         }
         onCreate();
     });
